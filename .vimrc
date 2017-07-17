@@ -71,6 +71,7 @@ filetype plugin on
 
 "下面是youcompleteme的部分
 set runtimepath+=~/.vim/bundle/YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion=1		" 选中之后就关闭preview window 
 let g:ycm_collect_identifiers_from_tags_files = 1           " 开启 YCM 基于标签引擎
 let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释与字符串中的内容也用于补全
 let g:syntastic_ignore_files=[".*\.py$"]
@@ -82,7 +83,8 @@ let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 let g:ycm_complete_in_comments = 1                          " 在注释输入中也能补全
 let g:ycm_complete_in_strings = 1                           " 在字符串输入中也能补全
 let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串中的文字也会被收入补全
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_show_diagnostics_ui = 0                           " 禁用语法检查
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"             "回车即选中当前项
 nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>     "跳转到定义处
@@ -130,12 +132,17 @@ let g:multi_cursor_quit_key='<Esc>'
 "colorscheme evening
 "colorscheme desert
 "colorscheme molokai
+"colorscheme eclipse
+
 "deus is not a colorscheme that contained in vim-colorschemes. I download it
 "from vimcolors.com and so is crunchbang.
-colorscheme deus
+"colorscheme deus
 "colorscheme crunchbang
 "colorscheme moonfly
-"colorscheme eclipse
+
+"fisa is download from github, if you want to use it, you can search
+"fisa-vim-colorscheme" in google.
+colorscheme fisa
 "end of vim-colorschemes
 
 
