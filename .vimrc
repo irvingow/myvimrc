@@ -1,3 +1,4 @@
+"set the space as mapleader and you can change it as long as you like.
 let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
@@ -111,7 +112,7 @@ let g:NERDTrimTrailingWhitespace = 1
 "F3一键对齐格式
 noremap <F3> :Autoformat<CR>
 let g:autoformat_verbosemode = 1
-let g:formatdef_custom_cfamily = '"--sytle=ansi --pad-oper"'
+let g:formatdef_custom_cfamily = '"astyle --style=ansi --pad-oper"'
 let g:formatters_c = ['custom_cfamily']
 let g:formatters_cpp = ['custom_cfamily']
 "code will be formated upon saved
@@ -129,6 +130,8 @@ let g:multi_cursor_quit_key='<Esc>'
 "colorscheme evening
 "colorscheme desert
 "colorscheme molokai
+"deus is not a colorscheme that contained in vim-colorschemes. I download it
+"from vimcolors.com and so is crunchbang.
 colorscheme deus
 "colorscheme crunchbang
 "colorscheme moonfly
